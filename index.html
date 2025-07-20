@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure User Authentication</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Secure User Authentication</h1>
+
+    <div id="register">
+      <h2>Register</h2>
+      <input type="text" id="regUsername" placeholder="Username" required/>
+      <input type="password" id="regPassword" placeholder="Password" required/>
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div id="login">
+      <h2>Login</h2>
+      <input type="text" id="logUsername" placeholder="Username" required/>
+      <input type="password" id="logPassword" placeholder="Password" required/>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="protected" class="hidden">
+      <h2>Protected Route</h2>
+      <p>Welcome, you are authenticated!</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
